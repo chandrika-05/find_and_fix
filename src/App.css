@@ -1,38 +1,87 @@
-.App {
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('C:/Users/HP/Desktop/find_and_fix/reactjs/src/components/backgroundimage.png') no-repeat center center fixed;
+  background-size: cover; /* Make background image cover the entire page */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header Styles */
+.app-header {
+  background-color: skyblue; /* Changed header color to sky blue */
   color: white;
+  text-align: center;
+  padding: 10px 0; /* Reduced padding for smaller header */
+  font-size: 1.5rem; /* Smaller font size for header */
+  width: 100%; /* Ensure it spans the entire width */
+  position: fixed; /* Fix header at the top */
+  top: 0; /* Align with the top */
+  left: 0; /* Align with the left */
+  z-index: 10; /* Ensure header stays above other content */
 }
 
-.App-link {
-  color: #61dafb;
+/* Form Container Styles */
+.form-container {
+  width: 100%;
+  max-width: 500px; /* Increased width of login box */
+  background: white;
+  padding: 80px; /* Increased padding for the form container */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 100px; /* Ensure there's space below the header */
+  margin-left: -7cd0px;
+  z-index: 5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form Header Styles */
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Input Field Styles */
+input {
+  width: 100%;
+  padding: 12px; /* Increased padding to prevent input fields from touching borders */
+  margin: 15px 0; /* Increased margin for more space between fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 12px; /* Increased padding for the button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message Styles */
+.error {
+  color: red;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+/* Toggle Link Styles */
+.toggle-link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
 }
